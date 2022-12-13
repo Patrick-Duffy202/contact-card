@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "contact-card",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,13 +9,20 @@
   "start": "cd server && node server.js",
   "server": "cd server nodemon server.js --ignore client",
   "build": "cd client && npm run build",
-  "install": "concurrently \"cd client && npm install\" \"cd server && npm install\" ",
+  "install": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
   "client": "cd client && npm start"
   },
   "repository": {
     "type": "git",
-    "url": "contact-card"
+    "url": "git+https://github.com/Patrick-Duffy202/contact-card.git"
   },
   "author": "Patrick",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patrick-Duffy202/contact-card/issues"
+  },
+  "homepage": "https://github.com/Patrick-Duffy202/contact-card#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
 }
